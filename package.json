@@ -1,0 +1,20 @@
+{
+  "name": "jatin-developer-portfolio",
+  "version": "1.0.0",
+  "description": "High-performance, interactive personal portfolio website for Jatin — Aspiring Full Stack Java Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -p 3000",
+    "dev": "npx serve . -p 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "fullstack",
+    "java",
+    "spring-boot",
+    "react",
+    "jatin"
+  ],
+  "author": "Jatin <jy13july@gmail.com>",
+  "license": "MIT"
+}

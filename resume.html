@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jatin — Resume | Full Stack Java Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+      color: #1e293b;
+      background: #f1f5f9;
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+    .resume-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 3rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    .action-bar {
+      max-width: 850px;
+      margin: 0 auto 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 0.65rem 1.4rem;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #4338ca;
+    }
+    .btn-secondary {
+      background: #e2e8f0;
+      color: #1e293b;
+    }
+    .btn-secondary:hover {
+      background: #cbd5e1;
+    }
+    header {
+      text-align: center;
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: #0f172a;
+      margin-bottom: 0.25rem;
+    }
+    .subtitle {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: #475569;
+      margin-bottom: 0.6rem;
+    }
+    .contact-info {
+      font-size: 0.88rem;
+      color: #334155;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+    .contact-info a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .section-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #0f172a;
+      border-bottom: 1.5px solid #0f172a;
+      padding-bottom: 0.25rem;
+      margin-top: 1.25rem;
+      margin-bottom: 0.65rem;
+    }
+    p, li {
+      font-size: 0.88rem;
+      color: #334155;
+    }
+    ul {
+      padding-left: 1.25rem;
+      margin-top: 0.35rem;
+    }
+    li {
+      margin-bottom: 0.35rem;
+      line-height: 1.45;
+    }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: #0f172a;
+    }
+    .entry-sub {
+      font-style: italic;
+      font-size: 0.88rem;
+      color: #475569;
+      margin-bottom: 0.4rem;
+    }
+    .date {
+      font-weight: 600;
+      color: #475569;
+      font-size: 0.85rem;
+    }
+    .skill-category {
+      margin-bottom: 0.35rem;
+    }
+    .skill-label {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .action-bar {
+        display: none !important;
+      }
+      .resume-container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      @page {
+        margin: 1.2cm;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="action-bar">
+    <a href="../index.html" class="btn btn-secondary">← Back to Portfolio</a>
+    <button onclick="window.print()" class="btn">
+      🖨️ Print / Save as PDF
+    </button>
+  </div>
+
+  <div class="resume-container">
+    <header>
+      <h1>JATIN</h1>
+      <div class="subtitle">Aspiring Full Stack Java Developer | Engineer</div>
+      <div class="contact-info">
+        <span>📞 9610704095</span>
+        <span>•</span>
+        <span>✉️ <a href="mailto:jy13july@gmail.com">jy13july@gmail.com</a></span>
+        <span>•</span>
+        <span>📍 Jaipur, Rajasthan</span>
+        <span>•</span>
+        <span>🔗 <a href="https://linkedin.com/in/jatin713" target="_blank">linkedin.com/in/jatin713</a></span>
+      </div>
+    </header>
+
+    <section>
+      <div class="section-title">Profile Summary</div>
+      <p>
+        Computer Science and Engineering undergraduate with a solid foundation in programming and web technologies (HTML, CSS, JavaScript, PHP, Python) and hands-on exposure to core Java. Strengthening skills in Java and the Spring Boot ecosystem to build a career as a Full Stack Java Developer, backed by clear communication, team leadership, and collaborative project coordination gained through internships and academic projects. A responsible, disciplined learner eager to apply this to real-world engineering teams.
+      </p>
+    </section>
+
+    <section>
+      <div class="section-title">Education</div>
+      <div class="entry-header">
+        <span>B.Tech, Computer Science & Engineering (In Progress)</span>
+        <span class="date">2023 – 2027</span>
+      </div>
+      <div class="entry-sub">Regional College for Education, Research & Technology — affiliated to Rajasthan Technical University</div>
+    </section>
+
+    <section>
+      <div class="section-title">Internship Experience</div>
+      <div class="entry-header">
+        <span>Web Developer Intern</span>
+        <span class="date">July 2025 – September 2025</span>
+      </div>
+      <div class="entry-sub">IITianCraft | Remote</div>
+      <ul>
+        <li>Designed responsive, user-friendly web interfaces and wrote clean, maintainable HTML, CSS, JavaScript, and React code.</li>
+        <li>Integrated APIs and backend services to support dynamic functionality.</li>
+        <li>Communicated regularly with design and development teams, leading weekly progress reviews and planning meetings to keep work aligned with deadlines.</li>
+        <li>Coordinated tasks across teammates and took initiative in resolving blockers, strengthening team management skills.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <div class="skill-category">
+        <span class="skill-label">• Programming:</span> Java (core concepts), Python, C, C++
+      </div>
+      <div class="skill-category">
+        <span class="skill-label">• Web Development:</span> HTML, CSS, JavaScript, React, PHP, Bootstrap, Tailwind CSS
+      </div>
+      <div class="skill-category">
+        <span class="skill-label">• Tools & Platforms:</span> Git, GitHub, VS Code, MS Office
+      </div>
+      <div class="skill-category">
+        <span class="skill-label">• Currently Learning:</span> Spring Boot, SQL / Database fundamentals — building toward full stack Java development
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Communication & Leadership Skills</div>
+      <ul>
+        <li><strong>Strong verbal and written communication:</strong> Presenting ideas, writing documentation, and liaising between technical and non-technical stakeholders.</li>
+        <li><strong>Team leadership:</strong> Experienced guiding peers during internship and academic projects, delegating tasks, and aligning teams toward shared goals.</li>
+        <li><strong>Team management:</strong> Coordinating schedules, tracking progress, and resolving conflicts to keep collaborative engineering projects on track.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-title">Languages</div>
+      <p>• English (Fluent) &nbsp;&nbsp;&nbsp;&nbsp; • Hindi (Native)</p>
+    </section>
+
+    <section>
+      <div class="section-title">Certifications</div>
+      <div style="margin-bottom: 0.65rem;">
+        <div class="entry-header">
+          <span>Summer Industrial Internship Training — Data Science, Machine Learning & AI</span>
+          <span class="date">May – June 2026</span>
+        </div>
+        <div class="entry-sub">LinuxWorld Informatics Pvt. Ltd. | 45-day research-based training | Certificate No. LWIPL-2026-5190</div>
+        <p style="font-size: 0.85rem;">Covered predictive analytics, data modeling, AI-driven automation, and real-time insights for business decision-making.</p>
+      </div>
+
+      <div style="margin-bottom: 0.65rem;">
+        <div class="entry-header">
+          <span>Certificate in Software Development</span>
+          <span class="date">October 2025</span>
+        </div>
+        <div class="entry-sub">Sonkhiya's Exceed Career Certification | 6-month course</div>
+      </div>
+
+      <div style="margin-bottom: 0.65rem;">
+        <div class="entry-header">
+          <span>Python Programming Internship</span>
+          <span class="date">August 2024 – September 2024</span>
+        </div>
+        <p style="font-size: 0.85rem;">Completed a 1-month hands-on internship focused on core Python programming concepts, object-oriented programming, and practical logic building.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Extra-Curricular Activities & Leadership</div>
+      <ul>
+        <li>Active participant in college sports events and cultural/technical fests, often taking on coordination and team-management roles.</li>
+        <li>Known among peers and faculty as a responsible, communicative, and orderly team member trusted to keep group efforts on track.</li>
+        <li>Quick learner — comfortable picking up new languages and frameworks independently.</li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>
